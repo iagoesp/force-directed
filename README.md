@@ -3,7 +3,7 @@
 # MATA53 - Force-directed graph drawing
 Esse trabalho foi feito como uma das avaliações da disciplina de Teoria dos Grafos - MATA53, ministrada por Tiago Januário, pela Universidade Federal da Bahia (UFBA), feito pelo aluno Iago Pinto do Espirito Santo com a matrícula 201523035
 
-### [**Link da apresentação do vídeo**]()
+### [**Link da apresentação do vídeo**](https://www.youtube.com/watch?v=Szaz4wSl50g)
 
 # Force-directed graph drawing
 
@@ -19,7 +19,7 @@ Em uma simulação com a aplicação desses algoritmos, a visualização dessas 
 D3.js é uma biblioteca de JavaScript que permite a manipulação de documentos que são baseados em informações que podem ser convertidas em HTML, SVG e CSS, normalmente voltado para aplicações WEB com o objetivo de melhor visualização de elementos e informações DOM (Document Object Model) dessas informações.
 
 # Execução do Programa
-Para poder acessar o algoritmo implementado, basta cloncar o repositório e abrir o documento HTML [index.html](https://github.com/iagoesp/force-directed/blob/main/index.html) em um navegador, com acesso a internet.
+Para poder acessar o algoritmo implementado, basta clonar o repositório e abrir o documento HTML [index.html](https://github.com/iagoesp/force-directed/blob/main/index.html) em um navegador, com acesso a internet.
 
 Após o clone e abrir a página, o usuário pode criar os vértices e arestas seguindo as orientações das instruções para cada função. Ao final, é possível visualizar o grafo a partir do input definido e baixar uma cópia da visualização em PDF.
 
