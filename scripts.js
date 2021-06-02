@@ -402,6 +402,7 @@ function render(js){
   }
 };
 
+// funções relacionadas ao movimento do nó correspondendo a simulação
 function dragstarted(d) {
   if (!d3.event.active) simulation.alphaTarget(0.3).restart();
   d.fx = d.x;
@@ -419,24 +420,27 @@ function dragended(d) {
   d.fy = null;
 }
 
+// apagar o input
 $("#resetDraw").click(function() {
   location.reload();
 });
 
 
+// configurando botões para desativar ao clicar no botão de gerar o grafo
 $("#gerarManual").click(function(){
   if(json_links.length > 0 && json_nodes.length > 0){
-    // $("#gerarManual").prop("disabled", true );
     $("#inserirNodesManual").prop("disabled", true );
     $("#inserirLinks").prop("disabled", true );
     $("#gerarManual").prop("disabled", true );
   }
 })
 
+// do bootstrap
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+// processamento do primeiro input fixo 
 $("#inputFixo1").click(function(){
   $("svg").empty();
   $(".rowDelete").each(function(){
@@ -469,6 +473,7 @@ $("#inputFixo1").click(function(){
   
 });
 
+// processamento do segundo input fixo 
 $("#inputFixo2").click(function(){
   $("svg").empty();
   $(".rowDelete").each(function(){
@@ -500,6 +505,7 @@ $("#inputFixo2").click(function(){
   }, 4500);
 });
 
+// função auxiliar para encontrar e remover elementos 
 function findJsonNodes(id){
   let arr_aux = [];
   for(let i = 0; i < json_nodes.length; i++){
@@ -546,6 +552,7 @@ function findJsonNodes(id){
   };
 }
 
+// ação para gerar o PDF
 $("#gerarPDF").click(function(){
   $("#container").hide();
   window.print();
